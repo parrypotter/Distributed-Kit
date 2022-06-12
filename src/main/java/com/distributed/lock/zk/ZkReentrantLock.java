@@ -96,7 +96,7 @@ public class ZkReentrantLock implements DistributedReentrantLock {
             this.path = path;
         }
 
-        public void run() {
+        public void run(){
             try {
                 List list = client.getChildren().forPath(path);
                 if (list == null || list.isEmpty()) {

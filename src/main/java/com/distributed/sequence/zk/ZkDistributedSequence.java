@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
  * Created by sunyujia@aliyun.com on 2016/2/25.
  */
 public class ZkDistributedSequence implements DistributedSequence {
+
     private static final org.slf4j.Logger log = LoggerFactory.getLogger(ZkReentrantLockCleanerTask.class);
 
     private CuratorFramework client;
